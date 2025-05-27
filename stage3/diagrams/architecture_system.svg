@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <!-- Titre et Légende -->
+    <g transform="translate(50,30)">
+        <text x="0" y="0" font-size="24" font-weight="bold">CardioBot - Architecture System (C4 Model Level 2)</text>
+        <!-- Légende -->
+        <rect x="900" y="0" width="20" height="20" fill="#1a73e8"/>
+        <text x="930" y="15" font-size="14">Container</text>
+        <rect x="900" y="30" width="20" height="20" fill="#34a853"/>
+        <text x="930" y="45" font-size="14">External System</text>
+        <rect x="900" y="60" width="20" height="20" fill="#fbbc04"/>
+        <text x="930" y="75" font-size="14">Database</text>
+    </g>
+
+    <!-- Client-Side -->
+    <g transform="translate(50,100)">
+        <!-- Web Application -->
+        <rect width="280" height="160" rx="4" fill="#1a73e8" stroke="#0d47a1" stroke-width="2"/>
+        <text x="140" y="40" text-anchor="middle" fill="white" font-weight="bold">[Container: Web Application]</text>
+        <text x="140" y="70" text-anchor="middle" fill="white">Frontend React PWA</text>
+        <text x="140" y="100" text-anchor="middle" fill="white" font-size="12">Provides all CardioBot functionality</text>
+        <text x="140" y="120" text-anchor="middle" fill="white" font-size="12">to patients and practitioners via web browser</text>
+        <text x="140" y="140" text-anchor="middle" fill="white" font-size="12">[React, TypeScript, Material-UI]</text>
+    </g>
+
+    <!-- API Application -->
+    <g transform="translate(450,100)">
+        <rect width="280" height="160" rx="4" fill="#1a73e8" stroke="#0d47a1" stroke-width="2"/>
+        <text x="140" y="40" text-anchor="middle" fill="white" font-weight="bold">[Container: API Application]</text>
+        <text x="140" y="70" text-anchor="middle" fill="white">Django REST API</text>
+        <text x="140" y="100" text-anchor="middle" fill="white" font-size="12">Provides CardioBot functionality</text>
+        <text x="140" y="120" text-anchor="middle" fill="white" font-size="12">via JSON/HTTPS API</text>
+        <text x="140" y="140" text-anchor="middle" fill="white" font-size="12">[Python, Django REST Framework]</text>
+    </g>
+
+    <!-- Database -->
+    <g transform="translate(850,100)">
+        <rect width="280" height="160" rx="4" fill="#fbbc04" stroke="#f09300" stroke-width="2"/>
+        <text x="140" y="40" text-anchor="middle" fill="white" font-weight="bold">[Container: Database]</text>
+        <text x="140" y="70" text-anchor="middle" fill="white">PostgreSQL + Redis</text>
+        <text x="140" y="100" text-anchor="middle" fill="white" font-size="12">Stores user data, medical records,</text>
+        <text x="140" y="120" text-anchor="middle" fill="white" font-size="12">temporary data and sessions</text>
+        <text x="140" y="140" text-anchor="middle" fill="white" font-size="12">[PostgreSQL, Redis]</text>
+    </g>
+
+    <!-- External Systems -->
+    <g transform="translate(50,400)">
+        <!-- FranceConnect+ -->
+        <rect width="250" height="120" rx="4" fill="#34a853" stroke="#1b5e20" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" fill="white" font-weight="bold">[External System]</text>
+        <text x="125" y="70" text-anchor="middle" fill="white">FranceConnect+</text>
+        <text x="125" y="90" text-anchor="middle" fill="white" font-size="12">[Authentication Service]</text>
+    </g>
+
+    <!-- IBM WatsonX -->
+    <g transform="translate(350,400)">
+        <rect width="250" height="120" rx="4" fill="#34a853" stroke="#1b5e20" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" fill="white" font-weight="bold">[External System]</text>
+        <text x="125" y="70" text-anchor="middle" fill="white">IBM WatsonX</text>
+        <text x="125" y="90" text-anchor="middle" fill="white" font-size="12">[AI/ML Services]</text>
+    </g>
+
+    <!-- Doctolib API -->
+    <g transform="translate(650,400)">
+        <rect width="250" height="120" rx="4" fill="#34a853" stroke="#1b5e20" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" fill="white" font-weight="bold">[External System]</text>
+        <text x="125" y="70" text-anchor="middle" fill="white">Doctolib API</text>
+        <text x="125" y="90" text-anchor="middle" fill="white" font-size="12">[Appointment Management]</text>
+    </g>
+
+    <!-- Relations/Arrows -->
+    <g stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)">
+        <!-- Frontend to API -->
+        <path d="M 330,180 L 450,180"/>
+        <text x="390" y="160" text-anchor="middle" font-size="12">HTTPS/JSON</text>
+
+        <!-- API to Database -->
+        <path d="M 730,180 L 850,180"/>
+        <text x="790" y="160" text-anchor="middle" font-size="12">SQL/Redis</text>
+
+        <!-- API to External Systems -->
+        <path d="M 590,260 L 175,400"/>
+        <path d="M 590,260 L 475,400"/>
+        <path d="M 590,260 L 775,400"/>
+    </g>
+
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- Annotations -->
+    <g transform="translate(50,600)">
+        <text x="0" y="0" font-size="16" font-weight="bold">System Context:</text>
+        <text x="0" y="30" font-size="14">• Secure medical data management system</text>
+        <text x="0" y="50" font-size="14">• GDPR and HDS compliant</text>
+        <text x="0" y="70" font-size="14">• High availability architecture</text>
+    </g>
+</svg>

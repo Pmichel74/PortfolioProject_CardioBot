@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="processGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357abd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="entityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="storeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Title with Background -->
+  <rect x="0" y="0" width="1200" height="70" fill="#34495e"/>
+  <text x="600" y="45" text-anchor="middle" font-size="28" font-weight="bold" fill="white" filter="url(#dropShadow)">
+    CardioBot - Data Flow Diagram (DFD) Level 1
+  </text>
+
+  <!-- Legend -->
+  <g transform="translate(950,100)">
+    <rect width="200" height="180" fill="#f8f9fa" stroke="#dee2e6" rx="5"/>
+    <text x="10" y="30" font-size="16" font-weight="bold" fill="#2c3e50">Legend</text>
+    
+    <!-- External Entity Symbol -->
+    <rect x="10" y="45" width="60" height="30" fill="url(#entityGradient)" stroke="#27ae60" stroke-width="2"/>
+    <text x="80" y="65" font-size="12" fill="#2c3e50">External Entity</text>
+    
+    <!-- Process Symbol -->
+    <circle cx="40" cy="105" r="25" fill="url(#processGradient)" stroke="#357abd" stroke-width="2"/>
+    <text x="80" y="110" font-size="12" fill="#2c3e50">Process</text>
+    
+    <!-- Data Store Symbol -->
+    <rect x="10" y="135" width="60" height="30" fill="url(#storeGradient)" stroke="#c0392b" stroke-width="2"/>
+    <text x="80" y="155" font-size="12" fill="#2c3e50">Data Store</text>
+  </g>
+
+  <!-- External Entities -->
+  <g transform="translate(50,150)">
+    <!-- Patient -->
+    <rect width="140" height="70" fill="url(#entityGradient)" stroke="#27ae60" stroke-width="2" rx="5" filter="url(#dropShadow)"/>
+    <text x="70" y="45" text-anchor="middle" font-size="16" fill="white" font-weight="bold">Patient</text>
+  </g>
+
+  <g transform="translate(50,250)">
+    <!-- Practitioner -->
+    <rect width="140" height="70" fill="url(#entityGradient)" stroke="#27ae60" stroke-width="2" rx="5" filter="url(#dropShadow)"/>
+    <text x="70" y="45" text-anchor="middle" font-size="16" fill="white" font-weight="bold">Practitioner</text>
+  </g>
+
+  <!-- Main Processes -->
+  <!-- Authentication -->
+  <g transform="translate(300,200)">
+    <circle r="60" fill="url(#processGradient)" stroke="#357abd" stroke-width="2" filter="url(#dropShadow)"/>
+    <text x="0" y="-10" text-anchor="middle" font-size="18" fill="white" font-weight="bold">1.0</text>
+    <text x="0" y="15" text-anchor="middle" font-size="14" fill="white">Authentication</text>
+    <text x="0" y="35" text-anchor="middle" font-size="12" fill="white">FranceConnect+</text>
+  </g>
+
+  <!-- Medical Data Management -->
+  <g transform="translate(550,200)">
+    <circle r="60" fill="url(#processGradient)" stroke="#357abd" stroke-width="2" filter="url(#dropShadow)"/>
+    <text x="0" y="-15" text-anchor="middle" font-size="18" fill="white" font-weight="bold">2.0</text>
+    <text x="0" y="10" text-anchor="middle" font-size="14" fill="white">Data</text>
+    <text x="0" y="30" text-anchor="middle" font-size="14" fill="white">Management</text>
+  </g>
+
+  <!-- AI Processing -->
+  <g transform="translate(800,200)">
+    <circle r="60" fill="url(#processGradient)" stroke="#357abd" stroke-width="2" filter="url(#dropShadow)"/>
+    <text x="0" y="-10" text-anchor="middle" font-size="18" fill="white" font-weight="bold">3.0</text>
+    <text x="0" y="15" text-anchor="middle" font-size="14" fill="white">AI Watson</text>
+  </g>
+
+  <!-- Data Stores -->
+  <g transform="translate(400,400)">
+    <!-- User Database -->
+    <rect width="250" height="60" fill="url(#storeGradient)" stroke="#c0392b" stroke-width="2" rx="5" filter="url(#dropShadow)"/>
+    <text x="20" y="35" fill="white" font-weight="bold">D1 User Database</text>
+  </g>
+
+  <g transform="translate(400,500)">
+    <!-- Medical Records -->
+    <rect width="250" height="60" fill="url(#storeGradient)" stroke="#c0392b" stroke-width="2" rx="5" filter="url(#dropShadow)"/>
+    <text x="20" y="35" fill="white" font-weight="bold">D2 Medical Records</text>
+  </g>
+
+  <!-- Data Flows -->
+  <g stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <!-- Authentication Flows -->
+    <path d="M 190,185 L 240,200" stroke="#3498db"/>
+    <text x="200" y="180" font-size="12" fill="#2c3e50">Login</text>
+    
+    <path d="M 360,200 L 490,200" stroke="#3498db"/>
+    <text x="425" y="190" font-size="12" fill="#2c3e50">Validation</text>
+    
+    <path d="M 610,200 L 740,200" stroke="#3498db"/>
+    <text x="675" y="190" font-size="12" fill="#2c3e50">Patient Data</text>
+
+    <!-- Database Flows -->
+    <path d="M 550,260 L 525,400" stroke="#e74c3c"/>
+    <text x="570" y="330" font-size="12" fill="#2c3e50">CRUD</text>
+    
+    <path d="M 550,260 L 525,500" stroke="#e74c3c"/>
+    <text x="570" y="380" font-size="12" fill="#2c3e50">Storage</text>
+  </g>
+
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+
+  <!-- Notes Section -->
+  <g transform="translate(50,600)">
+    <rect width="1100" height="150" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" rx="10"/>
+    <text x="20" y="30" font-size="16" font-weight="bold" fill="#2c3e50">Technical Specifications:</text>
+    <text x="20" y="60" font-size="14" fill="#2c3e50">• Secure authentication via FranceConnect+</text>
+    <text x="20" y="85" font-size="14" fill="#2c3e50">• End-to-end encryption of medical data (HDS)</text>
+    <text x="20" y="110" font-size="14" fill="#2c3e50">• GDPR and healthcare standards compliance</text>
+    <text x="500" y="60" font-size="14" fill="#2c3e50">• Secure REST API</text>
+    <text x="500" y="85" font-size="14" fill="#2c3e50">• Real-time monitoring</text>
+    <text x="500" y="110" font-size="14" fill="#2c3e50">• Automated backup</text>
+  </g>
+</svg>
