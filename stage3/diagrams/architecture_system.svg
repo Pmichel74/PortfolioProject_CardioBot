@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
-    <!-- Titre et Légende -->
+    <!-- Title and Legend -->
     <g transform="translate(50,30)">
         <text x="0" y="0" font-size="24" font-weight="bold">CardioBot - Architecture System (C4 Model Level 2)</text>
-        <!-- Légende -->
+        <!-- Legend -->
         <rect x="900" y="0" width="20" height="20" fill="#1a73e8"/>
         <text x="930" y="15" font-size="14">Container</text>
         <rect x="900" y="30" width="20" height="20" fill="#34a853"/>

@@ -1,99 +1,99 @@
-# 🎨 Guide de Design - CardioBot
+# 🎨 Design Guide - CardioBot
 
 ---
 
-## 📋 Vue d'ensemble
+## 📋 Overview
 
-Ce document définit les standards de design pour CardioBot, assurant une expérience utilisateur cohérente et professionnelle à travers l'application. Il sert de référence pour tous les développements UI/UX.
+This document defines the design standards for CardioBot, ensuring a consistent and professional user experience throughout the application. It serves as a reference for all UI/UX developments.
 
 ---
 
-## 1. 🎨 Charte Graphique
+## 1. 🎨 Visual Identity
 
-### 🌈 Palette de Couleurs Principale
+### 🌈 Primary Color Palette
 
-| Usage | Couleur | Code HEX | Description |
+| Usage | Color | HEX Code | Description |
 |-------|----------|-----------|------------|
-| Primaire | Bleu Médical | `#2B6CB0` | Couleur dominante de l'interface |
-| Secondaire | Gris Neutre | `#4A5568` | Texte et éléments secondaires |
-| Accent | Vert Validation | `#48BB78` | Actions positives et succès |
-| Alerte | Rouge Urgence | `#E53E3E` | Erreurs et alertes importantes |
+| Primary | Medical Blue | `#2B6CB0` | Dominant interface color |
+| Secondary | Neutral Gray | `#4A5568` | Text and secondary elements |
+| Accent | Validation Green | `#48BB78` | Positive actions and success |
+| Alert | Emergency Red | `#E53E3E` | Errors and important alerts |
 
-### 🎭 Palette de Couleurs Secondaire
+### 🎭 Secondary Color Palette
 
-| Usage | Couleur | Code HEX | Description |
+| Usage | Color | HEX Code | Description |
 |-------|----------|-----------|------------|
-| Background | Gris Clair | `#F7FAFC` | Fond d'écran général |
-| Surface | Blanc | `#FFFFFF` | Cartes et conteneurs |
-| Bordures | Gris Border | `#E2E8F0` | Séparation des éléments |
-| Disabled | Gris Désactivé | `#A0AEC0` | Éléments non disponibles |
+| Background | Light Gray | `#F7FAFC` | General background |
+| Surface | White | `#FFFFFF` | Cards and containers |
+| Borders | Border Gray | `#E2E8F0` | Element separation |
+| Disabled | Disabled Gray | `#A0AEC0` | Unavailable elements |
 
 ---
 
-## 2. ✍️ Typographie
+## 2. ✍️ Typography
 
-### 📝 Standards Typographiques
+### 📝 Typographic Standards
 
-| Élément | Police | Taille | Poids |
+| Element | Font | Size | Weight |
 |---------|---------|--------|--------|
-| Titres H1 | Roboto | 32px | 700 |
-| Titres H2 | Roboto | 24px | 600 |
-| Titres H3 | Roboto | 20px | 600 |
-| Corps de texte | Open Sans | 16px | 400 |
+| H1 Titles | Roboto | 32px | 700 |
+| H2 Titles | Roboto | 24px | 600 |
+| H3 Titles | Roboto | 20px | 600 |
+| Body Text | Open Sans | 16px | 400 |
 | Interface | Inter | 14px | 400/500 |
 
-### 🔢 Hiérarchie des Textes
+### 🔢 Text Hierarchy
 
-| Usage | Style | Exemple |
+| Usage | Style | Example |
 |-------|-------|---------|
-| Titre principal | 32px, Roboto Bold | Tableau de bord |
-| Sous-titre | 24px, Roboto SemiBold | Mes rendez-vous |
-| En-tête section | 20px, Roboto SemiBold | Informations patient |
-| Texte courant | 16px, Open Sans Regular | Contenu standard |
-| Labels | 14px, Inter Medium | Étiquettes formulaires |
+| Main title | 32px, Roboto Bold | Dashboard |
+| Subtitle | 24px, Roboto SemiBold | My Appointments |
+| Section header | 20px, Roboto SemiBold | Patient Information |
+| Body text | 16px, Open Sans Regular | Standard content |
+| Labels | 14px, Inter Medium | Form labels |
 
 ---
 
-## 3. 🧩 Composants UI
+## 3. 🧩 UI Components
 
-### 🔘 Boutons
+### 🔘 Buttons
 
 | Type | Usage | Style |
 |------|--------|-------|
-| Primaire | Actions principales | Fond bleu (#2B6CB0), texte blanc |
-| Secondaire | Actions alternatives | Bordure bleue, texte bleu |
-| Tertiaire | Actions mineures | Texte bleu uniquement |
-| Danger | Actions destructives | Fond rouge (#E53E3E), texte blanc |
+| Primary | Main actions | Blue background (#2B6CB0), white text |
+| Secondary | Alternative actions | Blue border, blue text |
+| Tertiary | Minor actions | Blue text only |
+| Danger | Destructive actions | Red background (#E53E3E), white text |
 
-### 📦 Cartes et Conteneurs
+### 📦 Cards and Containers
 
-| Composant | Style | Usage |
+| Component | Style | Usage |
 |-----------|-------|-------|
-| Carte standard | Ombre légère, coins arrondis 8px | Informations groupées |
-| Conteneur principal | Padding 24px, max-width 1200px | Layout général |
-| Panel | Bordure fine, fond blanc | Sections distinctes |
+| Standard card | Light shadow, 8px rounded corners | Grouped information |
+| Main container | 24px padding, max-width 1200px | General layout |
+| Panel | Thin border, white background | Distinct sections |
 
 ---
 
-## 7. ♿ Accessibilité
+## 7. ♿ Accessibility
 
-### 📋 Standards RGAA
+### 📋 RGAA Standards
 
-| Critère | Niveau | Validation |
+| Criteria | Level | Validation |
 |---------|---------|------------|
-| Contraste | AA (4.5:1) | Obligatoire |
-| Focus | Visible | Obligatoire |
-| Alt text | Présent | Obligatoire |
-| Navigation | Clavier | Obligatoire |
+| Contrast | AA (4.5:1) | Mandatory |
+| Focus | Visible | Mandatory |
+| Alt text | Present | Mandatory |
+| Navigation | Keyboard | Mandatory |
 
-### 🎯 Adaptations Spécifiques
+### 🎯 Specific Adaptations
 
-| Élément | Adaptation | Validation |
+| Element | Adaptation | Validation |
 |---------|------------|------------|
-| Texte | Redimensionnable | ✓ |
-| Contraste | Conforme WCAG | ✓ |
+| Text | Resizable | ✓ |
+| Contrast | WCAG compliant | ✓ |
 | Navigation | Skip links | ✓ |
-| Forms | Labels explicites | ✓ |
+| Forms | Explicit labels | ✓ |
 
 ---
 

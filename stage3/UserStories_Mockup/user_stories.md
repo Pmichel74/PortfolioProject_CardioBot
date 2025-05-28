@@ -2,101 +2,100 @@
 
 ---
 
-## 📋 Vue d'ensemble
+## 📋 Overview
 
-Ce document présente les user stories du projet CardioBot, organisées selon la méthode MoSCoW (Must Have, Should Have, Could Have, Won't Have).
+This document presents the user stories for the CardioBot project, organized according to the MoSCoW method (Must Have, Should Have, Could Have, Won't Have).
 
 ---
 
 ## 🔴 Must Have
 
-> **Fonctionnalités essentielles** - Ces éléments sont critiques pour le succès du projet
+> **Essential features** - These elements are critical for project success
 
-### 🔐 Authentification et Sécurité
-| 👤 En tant que | 💭 Je veux | 🎯 Afin de |
+### 🔐 Authentication and Security
+| 👤 As a | 💭 I want | 🎯 So that |
 |-------------|---------|----------|
-| Patient | m'authentifier via FranceConnect+ | accéder de manière sécurisée à mon espace personnel |
-| Praticien | avoir une double authentification | protéger l'accès aux données sensibles des patients |
+| Patient | to authenticate via FranceConnect+ | I can securely access my personal space |
+| Practitioner | to have two-factor authentication | I can protect access to sensitive patient data |
 
-### 📅 Gestion des Rendez-vous
-| 👤 En tant que | 💭 Je veux | 🎯 Afin de |
+### 📅 Appointment Management
+| 👤 As a | 💭 I want | 🎯 So that |
 |-------------|---------|----------|
-| Patient | prendre un rendez-vous en ligne | éviter les appels téléphoniques |
-| Patient | recevoir des confirmations et rappels automatiques | ne pas oublier mes rendez-vous |
-| Praticien | voir mon planning quotidien | optimiser ma gestion du temps |
+| Patient | to book appointments online | I can avoid phone calls |
+| Patient | to receive automatic confirmations and reminders | I don't forget my appointments |
+| Practitioner | to view my daily schedule | I can optimize my time management |
 
-### 🤖 Assistant Virtuel
-| 👤 En tant que | 💭 Je veux | 🎯 Afin de |
+### 🤖 Virtual Assistant
+| 👤 As a | 💭 I want | 🎯 So that |
 |-------------|---------|----------|
-| Patient | poser des questions administratives au chatbot | obtenir des réponses rapides |
-| Secrétaire médical | que le chatbot trie automatiquement les demandes | prioriser les urgences |
+| Patient | to ask administrative questions to the chatbot | I can get quick responses |
+| Medical secretary | the chatbot to automatically sort requests | I can prioritize emergencies |
 
 ---
 
 ## 🟡 Should Have
 
-> **Fonctionnalités importantes** - Ces éléments ajoutent une valeur significative
+> **Important features** - These elements add significant value
 
-### 📊 Suivi Patient
-| 👤 En tant que | 💭 Je veux | 🎯 Afin de |
+### 📊 Patient Monitoring
+| 👤 As a | 💭 I want | 🎯 So that |
 |-------------|---------|----------|
-| Patient | accéder à mon historique de rendez-vous | suivre mon parcours de soins |
-| Praticien | consulter rapidement le dossier d'un patient | optimiser la consultation |
+| Patient | to access my appointment history | I can track my care journey |
+| Practitioner | to quickly consult a patient's file | I can optimize the consultation |
 
 ### 💬 Communication
-| 👤 En tant que | 💭 Je veux | 🎯 Afin de |
+| 👤 As a | 💭 I want | 🎯 So that |
 |-------------|---------|----------|
-| Patient | envoyer des messages sécurisés au cabinet | poser des questions non urgentes |
-| Praticien | envoyer des notifications groupées | informer rapidement plusieurs patients |
+| Patient | to send secure messages to the practice | I can ask non-urgent questions |
+| Practitioner | to send group notifications | I can quickly inform multiple patients |
 
 ---
 
 ## 🟢 Could Have
 
-> **Fonctionnalités optionnelles** - Ces éléments seraient un plus
+> **Optional features** - These elements would be a plus
 
-### 📈 Analyse et Recommandations
-| 👤 En tant que | 💭 Je veux | 🎯 Afin de |
+### 📈 Analysis and Recommendations
+| 👤 As a | 💭 I want | 🎯 So that |
 |-------------|---------|----------|
-| Patient | recevoir des recommandations personnalisées | améliorer mon suivi cardiologique |
-| Praticien | avoir des statistiques sur l'activité du cabinet | optimiser son fonctionnement |
+| Patient | to receive personalized recommendations | I can improve my cardiology monitoring |
+| Practitioner | to have statistics on practice activity | I can optimize its operation |
 
 ---
 
 ## ⚫ Won't Have
 
-> **Fonctionnalités exclues** - Ces éléments ne seront pas développés
+> **Excluded features** - These elements will not be developed
 
-Les fonctionnalités suivantes sont explicitement exclues du périmètre du projet :
+The following features are explicitly excluded from the project scope:
 
-- ❌ Développement d'applications mobiles natives
-- ❌ Module de téléconsultation
-- ❌ Gestion comptable et facturation
-- ❌ Connexion avec des appareils médicaux
+- ❌ Native mobile application development
+- ❌ Teleconsultation module
+- ❌ Accounting and billing management
+- ❌ Connection with medical devices
 
 ---
 
-## ✅ Critères d'Acceptation Généraux
+## ✅ General Acceptance Criteria
 
-> **Standards de qualité** :
+> **Quality standards** :
 
+### 🔧 Technical Criteria
+- ✅ Unit and functional tests completed
+- ✅ Code reviewed by peer
+- ✅ Technical documentation up to date
+- ✅ Security standards compliance
 
-### 🔧 Critères Techniques
-- ✅ Tests unitaires et fonctionnels réalisés
-- ✅ Code revu par un pair
-- ✅ Documentation technique à jour
-- ✅ Respect des normes de sécurité
+### 🎯 Functional Criteria
+- ✅ Product Owner validation
+- ✅ User testing completed
+- ✅ GDPR compliance verified
+- ✅ User documentation available
 
-### 🎯 Critères Fonctionnels
-- ✅ Validation par le Product Owner
-- ✅ Tests utilisateurs effectués
-- ✅ Conformité RGPD vérifiée
-- ✅ Documentation utilisateur disponible
-
-### ⚡ Critères de Performance
-- ✅ Temps de réponse < 2 secondes
-- ✅ Compatible avec les navigateurs modernes
-- ✅ Responsive design validé
-- ✅ Accessibilité RGAA respectée
+### ⚡ Performance Criteria
+- ✅ Response time < 2 seconds
+- ✅ Compatible with modern browsers
+- ✅ Responsive design validated
+- ✅ RGAA accessibility respected
 
 ---

@@ -2,267 +2,266 @@
 
 ---
 
-## 📋 Vue d'ensemble
+## 📋 Overview
 
-Ce document présente l'ensemble des mockups et wireframes de l'application CardioBot, organisés par sections fonctionnelles.
+This document presents the complete set of mockups and wireframes for the CardioBot application, organized by functional sections.
 
 ---
 
-## 1. 🌐 Interfaces Publiques
+## 1. 🌐 Public Interfaces
 
-### 1.1 🏠 Page d'Accueil
+### 1.1 🏠 Home Page
 
 ```
 +--------------------------------------------------+
 |                   CardioBot                       |
 |                                                  |
-|     [À propos] [Services] [Contact] [Connexion]  |
+|     [About] [Services] [Contact] [Login]         |
 |                                                  |
 |     +------------------+  +------------------+    |
-|     |   Pour Patients  |  |  Pour Médecins  |    |
+|     |   For Patients   |  |   For Doctors   |    |
 |     +------------------+  +------------------+    |
 |                                                  |
-|     Prenez rendez-vous en ligne                  |
-|     [     Commencer maintenant     ]             |
+|     Book appointments online                     |
+|     [       Get Started Now        ]             |
 +--------------------------------------------------+
 ```
 
-### 1.2 🔐 Page de Connexion
+### 1.2 🔐 Login Page
 
 ```
 +--------------------------------------------------+
 |                   CardioBot                       |
 |                                                  |
 |        +--------------------------------+        |
-|        |      Se connecter avec         |        |
-|        |      FranceConnect+            |        |
+|        |      Login with               |        |
+|        |      FranceConnect+           |        |
 |        +--------------------------------+        |
 |                                                  |
 |        +--------------------------------+        |
-|        |      Email                     |        |
+|        |      Email                    |        |
 |        +--------------------------------+        |
 |                                                  |
 |        +--------------------------------+        |
-|        |      Mot de passe             |        |
+|        |      Password                 |        |
 |        +--------------------------------+        |
 |                                                  |
-|        [          Se connecter         ]         |
+|        [          Login                ]         |
 |                                                  |
-|        Mot de passe oublié ?                     |
 +--------------------------------------------------+
 ```
 
 ---
 
-## 2. 👤 Interface Patient
+## 2. 👤 Patient Interface
 
-### 2.1 📊 Dashboard Patient
+### 2.1 📊 Patient Dashboard
 
 ```
 +--------------------------------------------------+
-| CardioBot           Menu ☰             Profil ▾   |
+| CardioBot           Menu ☰             Profile ▾ |
 +--------------------------------------------------+
 |                                                  |
-| Prochain RDV                                     |
+| Next Appointment                                 |
 | +--------------------------------------------+  |
-| | Dr. Martin - Cardiologue                   |  |
-| | 15 Juin 2025 - 14:30                      |  |
+| | Dr. Martin - Cardiologist                  |  |
+| | June 15, 2025 - 2:30 PM                   |  |
 | +--------------------------------------------+  |
 |                                                  |
 | Messages (3)                                     |
 | +--------------------------------------------+  |
-| | - Résultats disponibles                    |  |
-| | - Rappel RDV                              |  |
+| | - Results available                        |  |
+| | - Appointment reminder                     |  |
 | +--------------------------------------------+  |
 |                                                  |
-| Assistant Virtuel                               |
+| Virtual Assistant                               |
 | +--------------------------------------------+  |
-| | Comment puis-je vous aider aujourd'hui ?    |  |
+| | How can I help you today?                  |  |
 | +--------------------------------------------+  |
 +--------------------------------------------------+
 ```
 
-### 2.2 📅 Prise de Rendez-vous
+### 2.2 📅 Appointment Booking
 
 ```
 +--------------------------------------------------+
-| ← Retour                     Nouveau Rendez-vous  |
+| ← Back                      New Appointment      |
 +--------------------------------------------------+
 |                                                  |
-| Sélectionnez un praticien :                     |
-| [ Dr. Martin, Cardiologue ▾ ]                    |
+| Select a practitioner:                          |
+| [ Dr. Martin, Cardiologist ▾ ]                  |
 |                                                  |
-| Sélectionnez une date :                         |
-| [ Calendrier interactif ]                        |
+| Select a date:                                  |
+| [ Interactive calendar ]                         |
 |                                                  |
-| Horaires disponibles :                          |
+| Available times:                                |
 | ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐            |
-| │ 9:00 │ │10:30 │ │14:00 │ │16:30 │            |
+| │ 9:00 │ │10:30 │ │ 2:00 │ │ 4:30 │            |
 | └──────┘ └──────┘ └──────┘ └──────┘            |
 |                                                  |
-| [ Confirmer le rendez-vous ]                     |
+| [ Confirm appointment ]                          |
 +--------------------------------------------------+
 ```
 
 ---
 
-## 3. 👨‍⚕️ Interface Praticien
+## 3. 👨‍⚕️ Practitioner Interface
 
-### 3.1 📅 Planning Journalier
+### 3.1 📅 Daily Schedule
 
 ```
 +--------------------------------------------------+
-| Planning - 27 Mai 2025                           |
+| Schedule - May 27, 2025                          |
 +--------------------------------------------------+
-| 09:00 - M. Dupont                               |
-|        Consultation suivi                        |
+| 09:00 - Mr. Dupont                              |
+|        Follow-up consultation                    |
 | ------------------------------------------------|
-| 10:30 - Mme Bernard                             |
-|        Première consultation                     |
+| 10:30 - Mrs. Bernard                            |
+|        First consultation                        |
 | ------------------------------------------------|
-| 14:00 - M. Martin                              |
-|        Résultats examens                        |
+| 02:00 PM - Mr. Martin                           |
+|        Exam results                             |
 +--------------------------------------------------+
-|        [ + Nouveau RDV ]                         |
+|        [ + New Appointment ]                     |
 +--------------------------------------------------+
 ```
 
-### 3.2 📋 Dossier Patient
+### 3.2 📋 Patient File
 
 ```
 +--------------------------------------------------+
-| Dossier - Jean Dupont                           |
+| File - Jean Dupont                               |
 +--------------------------------------------------+
-| Info   Historique   Documents   Ordonnances      |
+| Info   History   Documents   Prescriptions       |
 |                                                  |
-| Dernière visite : 15/04/2025                    |
-| Tension : 12/8                                   |
-| Traitement en cours :                           |
+| Last visit: 04/15/2025                          |
+| Blood pressure: 12/8                            |
+| Current treatment:                               |
 | - Cardipril 5mg                                 |
-| - Aspirine 75mg                                 |
+| - Aspirin 75mg                                  |
 |                                                  |
-| [ Ajouter une note ]   [ Modifier traitement ]   |
+| [ Add note ]        [ Modify treatment ]         |
 +--------------------------------------------------+
 ```
 
 ---
 
-## 4. 🤖 Assistant Virtuel
+## 4. 🤖 Virtual Assistant
 
-### 4.1 💬 Interface Chat
+### 4.1 💬 Chat Interface
 
 ```
 +--------------------------------------------------+
 |                    CardioBot                      |
 +--------------------------------------------------+
 |                                                  |
-|  🤖 Bonjour, que puis-je faire pour vous ?      |
+|  🤖 Hello, what can I do for you?               |
 |                                                  |
-|  👤 J'ai besoin d'un rendez-vous urgent         |
+|  👤 I need an urgent appointment                |
 |                                                  |
-|  🤖 Je peux vous aider. Voulez-vous :           |
-|     1. RDV urgent cardiologie                   |
-|     2. RDV urgences générales                   |
+|  🤖 I can help you. Would you like:             |
+|     1. Urgent cardiology appointment            |
+|     2. General emergency appointment            |
 |                                                  |
 | +--------------------------------------------+  |
-| | Écrivez votre message...         [Envoyer] |  |
+| | Type your message...              [Send]   |  |
 | +--------------------------------------------+  |
 +--------------------------------------------------+
 ```
 
 ---
 
-## 5. ⚙️ Interface Administrative
+## 5. ⚙️ Administrative Interface
 
-### 5.1 👥 Gestion des Utilisateurs
+### 5.1 👥 User Management
 
 ```
 +--------------------------------------------------+
-| Gestion Utilisateurs                             |
+| User Management                                  |
 +--------------------------------------------------+
-| Recherche : [ _________________ ]                 |
+| Search: [ _________________ ]                     |
 |                                                  |
-| Utilisateurs récents :                          |
+| Recent users:                                   |
 | ┌────────────────────────────────┐              |
 | │ Jean D.  │ Patient    │ ✏️ ❌  │              |
-| │ Dr Martin│ Praticien  │ ✏️ ❌  │              |
-| │ Marie B. │ Secrétaire │ ✏️ ❌  │              |
+| │ Dr Martin│ Practitioner│ ✏️ ❌  │              |
+| │ Marie B. │ Secretary  │ ✏️ ❌  │              |
 | └────────────────────────────────┘              |
 |                                                  |
-| [ + Nouvel utilisateur ]                         |
+| [ + New user ]                                   |
 +--------------------------------------------------+
 ```
 
-### 5.2 📊 Tableau de Bord Administratif
+### 5.2 📊 Administrative Dashboard
 
 ```
 +--------------------------------------------------+
-| Dashboard Administratif                          |
+| Administrative Dashboard                         |
 +--------------------------------------------------+
-| Statistiques Aujourd'hui                         |
+| Today's Statistics                               |
 | ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ |
-| │ RDV: 45     │ │ Actifs: 12  │ │ Attente: 3  │ |
+| │ Appts: 45   │ │ Active: 12  │ │ Waiting: 3  │ |
 | └─────────────┘ └─────────────┘ └─────────────┘ |
 |                                                  |
-| Activité récente                                |
-| - Nouveau praticien ajouté                      |
-| - Mise à jour système effectuée                 |
-| - Sauvegarde quotidienne complétée              |
+| Recent activity                                 |
+| - New practitioner added                        |
+| - System update completed                       |
+| - Daily backup completed                        |
 +--------------------------------------------------+
 ```
 
 ---
 
-## 📝 Notes Techniques
+## 📝 Technical Notes
 
-### 🔧 Spécifications d'Implementation
+### 🔧 Implementation Specifications
 
 1. **📱 Responsive Design**
-   - Breakpoint mobile : 320px - 768px
-   - Breakpoint tablette : 768px - 1024px
-   - Breakpoint desktop : > 1024px
+   - Mobile breakpoint: 320px - 768px
+   - Tablet breakpoint: 768px - 1024px
+   - Desktop breakpoint: > 1024px
 
-2. **🧩 Composants Réutilisables**
-   - Headers standardisés
-   - Boutons d'action
-   - Cards informatives
-   - Champs de formulaire
+2. **🧩 Reusable Components**
+   - Standardized headers
+   - Action buttons
+   - Information cards
+   - Form fields
 
 3. **🧭 Navigation**
-   - Menu hamburger sur mobile
-   - Barre latérale sur desktop
-   - Fil d'Ariane pour la navigation profonde
+   - Hamburger menu on mobile
+   - Sidebar on desktop
+   - Breadcrumbs for deep navigation
 
 ---
 
-### ♿ Accessibilité
+### ♿ Accessibility
 
-1. **📋 Standards WCAG 2.1**
-   - Contraste minimum 4.5:1
-   - Navigation au clavier
-   - Labels explicites
-   - Textes alternatifs
+1. **📋 WCAG 2.1 Standards**
+   - Minimum contrast 4.5:1
+   - Keyboard navigation
+   - Explicit labels
+   - Alternative texts
 
 2. **🎯 Adaptations**
-   - Mode sombre
-   - Taille de texte ajustable
-   - Support lecteur d'écran
+   - Dark mode
+   - Adjustable text size
+   - Screen reader support
 
 ---
 
 ### ⚡ Performance
 
-1. **🎯 Objectifs**
-   - Temps de chargement < 3s
+1. **🎯 Objectives**
+   - Loading time < 3s
    - First Paint < 1s
    - Time to Interactive < 5s
 
-2. **🚀 Optimisations**
-   - Lazy loading des images
-   - Mise en cache appropriée
-   - Minification des assets
+2. **🚀 Optimizations**
+   - Lazy loading of images
+   - Appropriate caching
+   - Asset minification
 
 ---
 
-*📄 Document généré le 27/05/2025*  
+*📄 Document generated on 05/27/2025*  
 *📋 Version 2.0*

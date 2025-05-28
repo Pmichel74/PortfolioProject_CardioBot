@@ -1,175 +1,173 @@
-# 🖥️ Spécifications des Interfaces - CardioBot
+# 🖥️ Interface Specifications - CardioBot
 
 ---
 
-## 📋 Vue d'ensemble
+## 📋 Overview
 
-Ce document détaille les spécifications des interfaces principales de CardioBot, incluant les écrans d'authentification, les tableaux de bord patient et praticien, le module chatbot et la gestion des rendez-vous.
+This document details the specifications for CardioBot's main interfaces, including authentication screens, patient and practitioner dashboards, the chatbot module, and appointment management.
 
 ---
 
-## 1. 🔐 Écran d'Authentification
+## 1. 🔐 Authentication Screen
 
-### 🧩 Composants Principaux
-- Header avec logo CardioBot
-- Bouton FranceConnect+ proéminent
-- Zone d'information cabinet médical
-- Interface de connexion personnel médical
+### 🧩 Main Components
+- Header with CardioBot logo
+- Prominent FranceConnect+ button
+- Medical practice information area
+- Medical staff login interface
 
-### 🔧 Spécifications Techniques
-| Élément | Description | Contraintes |
+### 🔧 Technical Specifications
+| Element | Description | Constraints |
 |---------|-------------|-------------|
-| FranceConnect+ | Bouton standard officiel | Respect charte FranceConnect |
-| 2FA Personnel | Code SMS + mot de passe | Validité code 5 minutes |
-| Session | Token JWT | Expiration 4 heures |
+| FranceConnect+ | Official standard button | Respect FranceConnect charter |
+| Staff 2FA | SMS code + password | Code validity 5 minutes |
+| Session | JWT token | 4-hour expiration |
 
-### 🛡️ Sécurité
-- Protocole HTTPS obligatoire
-- Audit logs des connexions
-- Blocage après 3 tentatives échouées
-- Déconnexion automatique après 30 minutes d'inactivité
+### 🛡️ Security
+- HTTPS protocol mandatory
+- Connection audit logs
+- Blocking after 3 failed attempts
+- Automatic logout after 30 minutes of inactivity
 
 ---
 
-## 2. 👤 Dashboard Patient
+## 2. 👤 Patient Dashboard
 
-### 📱 Menu Principal
-- Mes rendez-vous
-- Mon suivi médical
-- Messagerie sécurisée
-- Documents médicaux
-- Chatbot assistant
+### 📱 Main Menu
+- My appointments
+- My medical monitoring
+- Secure messaging
+- Medical documents
+- Assistant chatbot
 
-### 🎯 Zone Principale
-| Section | Contenu | Mise à jour |
+### 🎯 Main Area
+| Section | Content | Update |
 |---------|----------|------------|
-| Prochain RDV | Date, heure, praticien | Temps réel |
-| Rappels | Médicaments, examens | Quotidienne |
-| Indicateurs | Tension, poids, etc. | Manuel/Auto |
-| Notifications | Messages, résultats | Temps réel |
+| Next Appointment | Date, time, practitioner | Real-time |
+| Reminders | Medications, exams | Daily |
+| Indicators | Blood pressure, weight, etc. | Manual/Auto |
+| Notifications | Messages, results | Real-time |
 
-### ⚡ Fonctionnalités Clés
-- Prise de rendez-vous rapide
-- Téléchargement documents
-- Chat instantané
-- Historique médical
+- Quick appointment booking
+- Document downloads
+- Instant chat
+- Medical history
 
 ---
 
-## 3. 👨‍⚕️ Interface Praticien
+## 3. 👨‍⚕️ Practitioner Interface
 
-### 📂 Menu Latéral
-- Tableau de bord
-- Planning du jour
-- Liste des patients
-- Messagerie
-- Gestion des urgences
-- Statistiques
+### 📂 Side Menu
+- Dashboard
+- Daily schedule
+- Patient list
+- Messaging
+- Emergency management
+- Statistics
 
-### 💼 Zone de Travail
-| Module | Fonctionnalités | Priorité |
+### 💼 Work Area
+| Module | Features | Priority |
 |--------|----------------|-----------|
-| Calendrier | Vue jour/semaine/mois | Haute |
-| File d'attente | Statut patients | Haute |
-| Alertes | Urgences/retards | Haute |
-| ChatBot Admin | Configuration | Moyenne |
+| Calendar | Day/week/month view | High |
+| Queue | Patient status | High |
+| Alerts | Emergencies/delays | High |
+| Admin ChatBot | Configuration | Medium |
 
-### 🚀 Fonctionnalités Avancées
-- Recherche patient instantanée
-- Filtres multicritères
-- Export de données
-- Gestion des délégations
+### 🚀 Advanced Features
+- Instant patient search
+- Multi-criteria filters
+- Data export
+- Delegation management
 
 ---
 
-## 4. 🤖 Module Chatbot
+## 4. 🤖 Chatbot Module
 
-### 💬 Interface Utilisateur
-- Zone de chat principale
-- Boutons réponses rapides
-- Historique conversations
-- Indicateur IA actif
+### 💬 User Interface
+- Main chat area
+- Quick response buttons
+- Conversation history
+- Active AI indicator
 
-### 🎯 Capacités
-| Fonction | Description | Priorité |
+### 🎯 Capabilities
+| Function | Description | Priority |
 |----------|-------------|----------|
-| FAQ Auto | Réponses prédéfinies | Haute |
-| Triage | Classification urgence | Haute |
-| Transfert | Escalade humain | Haute |
-| Analytics | Statistiques usage | Moyenne |
+| Auto FAQ | Predefined responses | High |
+| Triage | Urgency classification | High |
+| Transfer | Human escalation | High |
+| Analytics | Usage statistics | Medium |
 
-### 🔗 Intégrations
-- Système de messagerie
-- Base de connaissances
-- Logs système
+### 🔗 Integrations
+- Messaging system
+- Knowledge base
+- System logs
 
 ---
 
-## 5. 📅 Gestion des Rendez-vous
+## 5. 📅 Appointment Management
 
-### 🎯 Fonctionnalités Principales
-- Calendrier interactif
-- Filtres consultations
-- Système confirmation
-- Gestion annulations
+### 🎯 Main Features
+- Interactive calendar
+- Consultation filters
+- Confirmation system
+- Cancellation management
 
 ### 🔄 Workflow
-| Étape | Action | Notification |
+| Step | Action | Notification |
 |-------|---------|-------------|
-| Demande | Création RDV | Email + SMS |
+| Request | Create appointment | Email + SMS |
 | Confirmation | Validation | Email + SMS |
-| Rappel | J-1 | SMS |
-| Suivi | Post-RDV | Email |
+| Reminder | D-1 | SMS |
+| Follow-up | Post-appointment | Email |
 
-### 🤖 Automatisations
-- Rappels automatiques
-- Liste d'attente
-- Réattribution créneaux
-- Statistiques occupation
-
----
-
-## 🎨 Principes de Design
-
-### 🎨 Charte Graphique
-- **Couleurs :**
-  - Principal : #2B6CB0 (bleu médical)
-  - Secondaire : #4A5568 (gris)
-  - Accent : #48BB78 (vert)
-  - Alerte : #E53E3E (rouge)
-
-### ✍️ Typographie
-- **Titres :** Roboto
-- **Corps :** Open Sans
-- **Taille base :** 16px
-
-
-### ♿ Accessibilité
-- Conformité RGAA
-- Contraste minimum 4.5:1
-- Navigation clavier
-- Support lecteur d'écran
+### 🤖 Automations
+- Automatic reminders
+- Waiting list
+- Slot reallocation
+- Occupancy statistics
 
 ---
 
-## 📝 Notes Techniques
+## 🎨 Design Principles
+
+### 🎨 Visual Identity
+- **Colors:**
+  - Primary: #2B6CB0 (medical blue)
+  - Secondary: #4A5568 (gray)
+  - Accent: #48BB78 (green)
+  - Alert: #E53E3E (red)
+
+### ✍️ Typography
+- **Titles:** Roboto
+- **Body:** Open Sans
+- **Base size:** 16px
+
+### ♿ Accessibility
+- RGAA compliance
+- Minimum contrast 4.5:1
+- Keyboard navigation
+- Screen reader support
+
+---
+
+## 📝 Technical Notes
 
 ### ⚡ Performance
-- Temps chargement < 2s
-- Optimisation images
-- Mise en cache
+- Loading time < 2s
+- Image optimization
+- Caching
 - Lazy loading
 
-### 🔒 Sécurité
-- Chiffrement données
-- Protection XSS
+### 🔒 Security
+- Data encryption
+- XSS protection
 - CSRF Tokens
 - Rate limiting
 
 ### 🔧 Maintenance
-- Logs centralisés
-- Monitoring temps réel
-- Sauvegarde quotidienne
-- Plan reprise activité
+- Centralized logs
+- Real-time monitoring
+- Daily backup
+- Business continuity plan
 
 ---
