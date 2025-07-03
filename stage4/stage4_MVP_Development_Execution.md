@@ -479,10 +479,8 @@ The CardioBot v2 project represents an **exemplary success** in Agile developmen
 ## 📅 **PERSPECTIVES AND PHASE 2**
 
 ### 🚀 **Continuous Optimization**
-- **Billing module:** Fee and reimbursement management
 - **Patient interface:** Dedicated web portal
 - **Advanced reporting:** Decision-making dashboards
-- **Telemedicine:** Video consultation integration
 - **ML Optimization:** Continuous performance improvement
 
 ### 🎯 **Defined Future Roadmap**
