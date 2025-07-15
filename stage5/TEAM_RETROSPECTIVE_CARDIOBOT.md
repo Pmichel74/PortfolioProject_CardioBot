@@ -23,7 +23,7 @@ This retrospective marks the completion of CardioBot v2 MVP development, a compr
 |-------------|--------|----------|--------|
 | **Automated Tests** | > 30 | 51 tests | ✅ Exceeded |
 | **Security Score** | > 85/100 | 94/100 | ✅ Excellent |
-| **DDD Architecture** | Complete | 283 files | ✅ Implemented |
+| **DDD Architecture** | Complete | 280 files | ✅ Implemented |
 | **Production Deployment** | Functional | GHCR operational | ✅ Success |
 | **Documentation** | Complete | 70+ docs | ✅ Comprehensive |
 
@@ -47,7 +47,7 @@ This retrospective marks the completion of CardioBot v2 MVP development, a compr
 
 #### **Clear Role Separation**
 - **Project Manager:** Effective coordination with detailed roadmap
-- **Architecture:** Well-implemented DDD architecture with 283 organized files
+- **Architecture:** Well-implemented DDD architecture with 280 organized files
 - **QA:** Multi-level testing (security, integration, performance)
 - **DevOps:** Automated Docker deployment on GitHub Container Registry
 
@@ -256,7 +256,7 @@ This retrospective marks the completion of CardioBot v2 MVP development, a compr
 
 #### **Domain-Driven Design (DDD)**
 **Confirmed benefits:**
-- ✅ Excellent maintainability with 283 organized files
+- ✅ Excellent maintainability with 280 organized files
 - ✅ Clear responsibility separation
 - ✅ Preserved scalability (easy domain addition)
 - ✅ Targeted tests by business domain
